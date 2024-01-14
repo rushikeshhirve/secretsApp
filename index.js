@@ -10,8 +10,7 @@ const API_URL = process.env.API_URL
 app.set('view engine', 'ejs')
 app.set('views', __dirname + '/views')
 
-app.use(express.static("public"));
-app.set('public', __dirname + '/public')
+app.use(express.static(__dirname + "/public/"));
 
 app.get("/", async (req, res) => {
     try {
