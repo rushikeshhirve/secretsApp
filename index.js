@@ -7,7 +7,9 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 const API_URL = process.env.API_URL
-app.set("view engine", "ejs")
+app.set('view engine', 'ejs')
+app.set('views', __dirname + '/views')
+
 app.use(express.static("public"));
 
 app.get("/", async (req, res) => {
