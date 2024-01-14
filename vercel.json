@@ -12,7 +12,7 @@
         "dest": "/api/$1"
       },
       {
-        "handle": "@vercel/node"
+        "handle": "filesystem"
       },
       {
         "src": "/(.*)",
